@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		B789D86E2B52A7D000484D5C /* SpaceXAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B789D86D2B52A7D000484D5C /* SpaceXAppApp.swift */; };
-		B789D8702B52A7D000484D5C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B789D86F2B52A7D000484D5C /* ContentView.swift */; };
 		B789D8722B52A7D400484D5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B789D8712B52A7D400484D5C /* Assets.xcassets */; };
 		B789D8752B52A7D400484D5C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B789D8742B52A7D400484D5C /* Preview Assets.xcassets */; };
 		B789D87F2B52A7D500484D5C /* SpaceXAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B789D87E2B52A7D500484D5C /* SpaceXAppTests.swift */; };
 		B789D8892B52A7D500484D5C /* SpaceXAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B789D8882B52A7D500484D5C /* SpaceXAppUITests.swift */; };
 		B789D88B2B52A7D500484D5C /* SpaceXAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B789D88A2B52A7D500484D5C /* SpaceXAppUITestsLaunchTests.swift */; };
+		B797CEAD2B52BA0E00099D4D /* LaunchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797CEAC2B52BA0E00099D4D /* LaunchListView.swift */; };
+		B797CEAF2B52BA2F00099D4D /* LaunchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797CEAE2B52BA2F00099D4D /* LaunchDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		B789D86A2B52A7D000484D5C /* SpaceXApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B789D86D2B52A7D000484D5C /* SpaceXAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAppApp.swift; sourceTree = "<group>"; };
-		B789D86F2B52A7D000484D5C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B789D8712B52A7D400484D5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B789D8742B52A7D400484D5C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B789D87A2B52A7D400484D5C /* SpaceXAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +44,9 @@
 		B789D8842B52A7D500484D5C /* SpaceXAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B789D8882B52A7D500484D5C /* SpaceXAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAppUITests.swift; sourceTree = "<group>"; };
 		B789D88A2B52A7D500484D5C /* SpaceXAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B797CEAC2B52BA0E00099D4D /* LaunchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListView.swift; sourceTree = "<group>"; };
+		B797CEAE2B52BA2F00099D4D /* LaunchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailView.swift; sourceTree = "<group>"; };
+		B797CEB02B52BD0400099D4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +97,9 @@
 		B789D86C2B52A7D000484D5C /* SpaceXApp */ = {
 			isa = PBXGroup;
 			children = (
+				B797CEB02B52BD0400099D4D /* Info.plist */,
+				B797CEA32B52B08400099D4D /* Modules */,
 				B789D86D2B52A7D000484D5C /* SpaceXAppApp.swift */,
-				B789D86F2B52A7D000484D5C /* ContentView.swift */,
 				B789D8712B52A7D400484D5C /* Assets.xcassets */,
 				B789D8732B52A7D400484D5C /* Preview Content */,
 			);
@@ -125,6 +129,79 @@
 				B789D88A2B52A7D500484D5C /* SpaceXAppUITestsLaunchTests.swift */,
 			);
 			path = SpaceXAppUITests;
+			sourceTree = "<group>";
+		};
+		B797CEA32B52B08400099D4D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B797CEA52B52B26700099D4D /* LaunchDetail */,
+				B797CEA42B52B25900099D4D /* LaunchList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B797CEA42B52B25900099D4D /* LaunchList */ = {
+			isa = PBXGroup;
+			children = (
+				B797CEA72B52B28800099D4D /* ViewModel */,
+				B797CEA62B52B27C00099D4D /* Views */,
+				B797CEA82B52B28F00099D4D /* Model */,
+			);
+			path = LaunchList;
+			sourceTree = "<group>";
+		};
+		B797CEA52B52B26700099D4D /* LaunchDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B797CEAB2B52B2C500099D4D /* Models */,
+				B797CEAA2B52B2BF00099D4D /* ViewModels */,
+				B797CEA92B52B2B400099D4D /* Views */,
+			);
+			path = LaunchDetail;
+			sourceTree = "<group>";
+		};
+		B797CEA62B52B27C00099D4D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B797CEAC2B52BA0E00099D4D /* LaunchListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B797CEA72B52B28800099D4D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B797CEA82B52B28F00099D4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B797CEA92B52B2B400099D4D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B797CEAE2B52BA2F00099D4D /* LaunchDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B797CEAA2B52B2BF00099D4D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B797CEAB2B52B2C500099D4D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +334,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B789D8702B52A7D000484D5C /* ContentView.swift in Sources */,
+				B797CEAD2B52BA0E00099D4D /* LaunchListView.swift in Sources */,
+				B797CEAF2B52BA2F00099D4D /* LaunchDetailView.swift in Sources */,
 				B789D86E2B52A7D000484D5C /* SpaceXAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,10 +497,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SpaceXApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpaceXApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SpaceX;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -448,10 +525,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SpaceXApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpaceXApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SpaceX;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
