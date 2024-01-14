@@ -7,11 +7,6 @@
 
 import SwiftUI
 
-//struct Mission : Codable, Identifiable, Hashable{
-//    var id: Int
-//    var name: String
-//}
-
 struct LaunchListView: View {
     
     @StateObject var viewModel = LaunchListViewModel()
@@ -19,21 +14,22 @@ struct LaunchListView: View {
     var body: some View {
         ZStack {
             NavigationSplitView(columnVisibility: .constant(.doubleColumn)) {
-                List(viewModel.launches, id: \.flightNumber) { launch in
+                List(viewModel.launches, id: \.missionName) { launch in
                     NavigationLink {
-                        //launch.links.missionPatchSmall
-                        //LaunchDetailView(mission: mission)
+                        LaunchDetailView(launch: launch)
                     } label: {
                         LaunchCell(launch: launch)
                     }
                 }
                 .navigationTitle("Launches")
+                .navigationBarTitleDisplayMode(.inline)
                 .listStyle(.plain)
             } detail: {
                 Text("Select a Mission")
             }
             .navigationSplitViewStyle(.balanced)
             .task {
+                print("API called")
                 viewModel.getLaunches()
             }
             

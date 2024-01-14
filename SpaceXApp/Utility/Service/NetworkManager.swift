@@ -10,16 +10,13 @@ import UIKit
 final class NetworkManager {
     
     static let shared = NetworkManager()
-    private let cache = NSCache<NSString, UIImage>()
-    
-    static let baseURL = "https://api.spacexdata.com/v3/"
-    private let launchURL = baseURL + "launches"
-    
+
     private init() {}
     
+    //To get Launch data from internet
     func getLaunches() async throws -> [LaunchModel] {
         
-        guard let url = URL(string: launchURL) else {
+        guard let url = URL(string: URLs.launchURL) else {
             throw APIError.invalidURL
         }
         

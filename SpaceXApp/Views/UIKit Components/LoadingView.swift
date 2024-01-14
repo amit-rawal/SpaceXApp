@@ -7,11 +7,13 @@
 
 import SwiftUI
 
+// To show loading Indicator
+
 struct ActivityIndicator: UIViewRepresentable {
     
     func makeUIView(context: Context) -> UIActivityIndicatorView {
         let activityIndicatorView = UIActivityIndicatorView(style: .large)
-        activityIndicatorView.color = UIColor.brandPrimary
+        activityIndicatorView.color = UIColor.gray
         activityIndicatorView.startAnimating()
         return activityIndicatorView
     }
@@ -27,7 +29,7 @@ struct LoadingView: View {
                 .ignoresSafeArea()
             
             ProgressView()
-                .progressViewStyle(CircularProgressViewStyle(tint: .brandPrimary))
+                .progressViewStyle(CircularProgressViewStyle(tint: .gray))
                 .scaleEffect(2)
         }
     }

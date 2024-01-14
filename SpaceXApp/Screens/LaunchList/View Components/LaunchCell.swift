@@ -11,46 +11,17 @@ struct LaunchCell: View {
     
     let launch: LaunchModel
 
-//    init(launch: LaunchModel) {
-//        self.launch = launch
-//    }
-
     var body: some View {
         
        HStack {
             VStack {
                 
                 if let imgUrl = launch.links.missionPatchSmall {
-                    
                     RemoteImage(url: imgUrl)
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 40, height: 40, alignment: .center)
                         .cornerRadius(8)
                         .foregroundColor(.black)
-                    
-//                    AppRemoteImage.init(urlString: imgUrl)
-//                        .aspectRatio(contentMode: .fit)
-//                        .frame(width: 40, height: 40, alignment: .center)
-//                        .cornerRadius(8)
-//                        .foregroundColor(.black)
-            
-                    
-//                    AsyncImage(url: URL(string: imgUrl)) { image in
-//                        image
-//                            .resizable()
-//                            .aspectRatio(contentMode: .fit)
-//                            .frame(width: 40, height: 40, alignment: .center)
-//                            .cornerRadius(8)
-//                            .foregroundColor(.black)
-//                    } placeholder: {
-//                        Image("default-icon")
-//                            .resizable()
-//                            .aspectRatio(contentMode: .fit)
-//                            .frame(width: 40, height: 40, alignment: .center)
-//                            .cornerRadius(8)
-//                            .foregroundColor(.black)
-//                    }
-                    
                     
                 } else {
                     VStack {
@@ -58,25 +29,36 @@ struct LaunchCell: View {
                             .resizable()
                     }
                     .frame(width: 40, height: 40, alignment: .center)
-                    .background(Color("light-gray"))
+                    .background(Color.lightGray)
                     .cornerRadius(50)
                 }
             }.padding(.trailing, 5)
 
 
             VStack(alignment: .leading, spacing: 5) {
-                Text(launch.missionName)
-                    .foregroundColor(Color.black)
+                
+                Text("Mission Name: \(launch.missionName)")
+                    .foregroundColor(Color.white)
                     .font(.system(size: 16, weight: .bold, design: .rounded))
-
+                
+                if let rocketName = launch.rocket.rocketName {
+                    Text("Rocket Name: \(rocketName)")
+                        .foregroundColor(Color.white)
+                        .font(.system(size: 12, weight: .bold, design: .rounded))
+                }
+                
+                if let siteName = launch.launchSite.siteName {
+                    Text("Site Name: \(siteName)")
+                        .foregroundColor(Color.white)
+                        .font(.system(size: 12, weight: .bold, design: .rounded))
+                }
+             
                 if let launchDate = launch.launchDateUTC {
-                    Text(Date.dateFormatter(time: launchDate))
-                        .foregroundColor(Color("light-gray"))
-                        .font(.system(size: 14, weight: .medium, design: .rounded))
+                    Text("Launch Date: \(Date.dateFormatter(time: launchDate))")
+                        .foregroundColor(Color.lightGray)
+                        .font(.system(size: 12, weight: .medium, design: .rounded))
                 }
             }
-           
-           
         }
     }
 }

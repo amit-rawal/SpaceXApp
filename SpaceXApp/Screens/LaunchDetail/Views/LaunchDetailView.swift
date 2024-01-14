@@ -9,15 +9,46 @@ import SwiftUI
 
 struct LaunchDetailView: View {
     
-   // var mission: Mission
+    let launch: LaunchModel
     
     var body: some View {
-            Text("Hello")
+
+        ZStack {
+
+            ScrollView {
+                    
+                VStack(spacing: 20) {
+                    
+                    ImageViewDetail(launch: launch)
+       
+                    InformationView(launch: launch)
+                    
+                    LaunchDesc(launch: launch)
+//
+//                    if let rocket = contentVM.rocket {
+//                        RocketInfo(rocket: rocket)
+//                    }
+//
+//                    if let launchpad = contentVM.launchpad {
+//                        Launchpad(launchpad: launchpad)
+//                    }
+ 
+                }
+                .padding(.all, 15)
+                
+                Spacer()
+            }
+            .navigationBarTitle(launch.missionName)
+            .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 
 struct LaunchDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        LaunchDetailView()
+        if let launchData = MockManager.shared.launchData?.first {
+            LaunchDetailView(launch: launchData)
+        }
     }
 }
+

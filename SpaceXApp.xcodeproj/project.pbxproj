@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B779561B2B541BF2006822CB /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779561A2B541BF2006822CB /* Urls.swift */; };
 		B789D86E2B52A7D000484D5C /* SpaceXAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B789D86D2B52A7D000484D5C /* SpaceXAppApp.swift */; };
 		B789D8722B52A7D400484D5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B789D8712B52A7D400484D5C /* Assets.xcassets */; };
 		B789D8752B52A7D400484D5C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B789D8742B52A7D400484D5C /* Preview Assets.xcassets */; };
@@ -27,6 +28,13 @@
 		B797FAB92B53DDB8008CB065 /* MOCK_DATA.json in Resources */ = {isa = PBXBuildFile; fileRef = B797FAB72B53DDB8008CB065 /* MOCK_DATA.json */; };
 		B797FABB2B53E529008CB065 /* RemoteImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797FABA2B53E529008CB065 /* RemoteImageManager.swift */; };
 		B797FABD2B53E872008CB065 /* MockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797FABC2B53E872008CB065 /* MockManager.swift */; };
+		B797FAC02B53F976008CB065 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797FABF2B53F976008CB065 /* InformationView.swift */; };
+		B797FAC22B53FB05008CB065 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797FAC12B53FB05008CB065 /* View+Ext.swift */; };
+		B797FAC42B53FB63008CB065 /* LauncheDesc.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797FAC32B53FB63008CB065 /* LauncheDesc.swift */; };
+		B797FAC62B53FBC1008CB065 /* HeaderLable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797FAC52B53FBC1008CB065 /* HeaderLable.swift */; };
+		B797FAC82B53FC3A008CB065 /* RowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797FAC72B53FC3A008CB065 /* RowData.swift */; };
+		B797FACA2B53FC93008CB065 /* LableDevider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797FAC92B53FC93008CB065 /* LableDevider.swift */; };
+		B797FACC2B54164C008CB065 /* ImageViewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797FACB2B54164C008CB065 /* ImageViewDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B779561A2B541BF2006822CB /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
 		B789D86A2B52A7D000484D5C /* SpaceXApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B789D86D2B52A7D000484D5C /* SpaceXAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAppApp.swift; sourceTree = "<group>"; };
 		B789D8712B52A7D400484D5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +80,13 @@
 		B797FAB72B53DDB8008CB065 /* MOCK_DATA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MOCK_DATA.json; sourceTree = "<group>"; };
 		B797FABA2B53E529008CB065 /* RemoteImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageManager.swift; sourceTree = "<group>"; };
 		B797FABC2B53E872008CB065 /* MockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockManager.swift; sourceTree = "<group>"; };
+		B797FABF2B53F976008CB065 /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		B797FAC12B53FB05008CB065 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		B797FAC32B53FB63008CB065 /* LauncheDesc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncheDesc.swift; sourceTree = "<group>"; };
+		B797FAC52B53FBC1008CB065 /* HeaderLable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderLable.swift; sourceTree = "<group>"; };
+		B797FAC72B53FC3A008CB065 /* RowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowData.swift; sourceTree = "<group>"; };
+		B797FAC92B53FC93008CB065 /* LableDevider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LableDevider.swift; sourceTree = "<group>"; };
+		B797FACB2B54164C008CB065 /* ImageViewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +114,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B77956192B541BB9006822CB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B797FA962B53A5AC008CB065 /* NetworkManager.swift */,
+				B779561A2B541BF2006822CB /* Urls.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		B789D8612B52A7D000484D5C = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +206,7 @@
 		B797CEA52B52B26700099D4D /* LaunchDetail */ = {
 			isa = PBXGroup;
 			children = (
+				B797FABE2B53F95A008CB065 /* View Components */,
 				B797CEAB2B52B2C500099D4D /* Models */,
 				B797CEAA2B52B2BF00099D4D /* ViewModels */,
 				B797CEA92B52B2B400099D4D /* Views */,
@@ -237,6 +263,7 @@
 		B797FA922B53A464008CB065 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				B77956192B541BB9006822CB /* Service */,
 				B797FA932B53A472008CB065 /* Manager */,
 				B797FA952B53A492008CB065 /* Alert */,
 				B797FA942B53A484008CB065 /* Extentions */,
@@ -248,7 +275,6 @@
 			isa = PBXGroup;
 			children = (
 				B797FABA2B53E529008CB065 /* RemoteImageManager.swift */,
-				B797FA962B53A5AC008CB065 /* NetworkManager.swift */,
 				B797FABC2B53E872008CB065 /* MockManager.swift */,
 			);
 			path = Manager;
@@ -259,6 +285,7 @@
 			children = (
 				B797FA9C2B53A719008CB065 /* Color+Ext.swift */,
 				B797FAAB2B53C963008CB065 /* Date+Ext.swift */,
+				B797FAC12B53FB05008CB065 /* View+Ext.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -292,6 +319,19 @@
 			isa = PBXGroup;
 			children = (
 				B797FAAF2B53D7D2008CB065 /* LaunchCell.swift */,
+			);
+			path = "View Components";
+			sourceTree = "<group>";
+		};
+		B797FABE2B53F95A008CB065 /* View Components */ = {
+			isa = PBXGroup;
+			children = (
+				B797FABF2B53F976008CB065 /* InformationView.swift */,
+				B797FAC32B53FB63008CB065 /* LauncheDesc.swift */,
+				B797FAC52B53FBC1008CB065 /* HeaderLable.swift */,
+				B797FAC72B53FC3A008CB065 /* RowData.swift */,
+				B797FAC92B53FC93008CB065 /* LableDevider.swift */,
+				B797FACB2B54164C008CB065 /* ImageViewDetail.swift */,
 			);
 			path = "View Components";
 			sourceTree = "<group>";
@@ -427,17 +467,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B797FAC22B53FB05008CB065 /* View+Ext.swift in Sources */,
+				B797FAC02B53F976008CB065 /* InformationView.swift in Sources */,
 				B797FA9B2B53A696008CB065 /* Alert.swift in Sources */,
+				B779561B2B541BF2006822CB /* Urls.swift in Sources */,
 				B797FA9D2B53A719008CB065 /* Color+Ext.swift in Sources */,
 				B797FAB02B53D7D2008CB065 /* LaunchCell.swift in Sources */,
 				B797FA992B53A678008CB065 /* APIError.swift in Sources */,
 				B797FAA72B53BBA7008CB065 /* LoadingView.swift in Sources */,
+				B797FACC2B54164C008CB065 /* ImageViewDetail.swift in Sources */,
 				B797FA972B53A5AC008CB065 /* NetworkManager.swift in Sources */,
+				B797FAC42B53FB63008CB065 /* LauncheDesc.swift in Sources */,
 				B797CEAD2B52BA0E00099D4D /* LaunchListView.swift in Sources */,
 				B797FABB2B53E529008CB065 /* RemoteImageManager.swift in Sources */,
+				B797FAC62B53FBC1008CB065 /* HeaderLable.swift in Sources */,
 				B797FAAC2B53C963008CB065 /* Date+Ext.swift in Sources */,
+				B797FAC82B53FC3A008CB065 /* RowData.swift in Sources */,
 				B797CEAF2B52BA2F00099D4D /* LaunchDetailView.swift in Sources */,
 				B797FA9F2B53AB05008CB065 /* LaunchDataModel.swift in Sources */,
+				B797FACA2B53FC93008CB065 /* LableDevider.swift in Sources */,
 				B797FABD2B53E872008CB065 /* MockManager.swift in Sources */,
 				B789D86E2B52A7D000484D5C /* SpaceXAppApp.swift in Sources */,
 				B797FAA32B53B8FE008CB065 /* LaunchViewModel.swift in Sources */,

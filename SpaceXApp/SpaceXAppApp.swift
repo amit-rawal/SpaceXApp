@@ -11,7 +11,7 @@ import SwiftUI
 struct SpaceXAppApp: App {
     var body: some Scene {
         WindowGroup {
-            LaunchListView()
+            LaunchListView().environment(\.colorScheme, .dark)
         }
     }
 }

@@ -21,7 +21,7 @@ import SwiftUI
         
         Task {
             do {
-                launches = try await NetworkManager.shared.getLaunches()
+                launches = try await NetworkManager.shared.getLaunches().reversed()
                 isLoading = false
             } catch {
                 if let apError = error as? APIError {

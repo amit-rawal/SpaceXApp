@@ -8,6 +8,13 @@
 
 import SwiftUI
 
+/*
+ To Cache Image and prevent unnacessary API calls
+ Before making API call check Image in Cache if exist return it
+ Otherwise call API and save image in cache for next time
+*/
+
+// To Cache Image in NSCache
 class ImageCache {
     static let shared = ImageCache()
 
@@ -24,7 +31,7 @@ class ImageCache {
     }
 }
 
-
+// View who request image from ImageLoader class
 struct RemoteImage: View {
     @ObservedObject var imageLoader: ImageLoader
 
@@ -37,11 +44,13 @@ struct RemoteImage: View {
             Image(uiImage: image)
                 .resizable()
         } else {
-            ProgressView()
+            Image("default-icon")
+                .resizable()
         }
     }
 }
 
+//To Load Images from internet
 class ImageLoader: ObservableObject {
     @Published var image: UIImage?
 
@@ -70,6 +79,7 @@ class ImageLoader: ObservableObject {
                 ImageCache.shared.set(image!, forKey: self.url)
             }
         }
+    
         task?.resume()
     }
 }

@@ -8,6 +8,7 @@
 import Foundation
 
 extension Date {
+    
     static func dateFormatter(time: String, getFormate: String? = "yyyy-MM-dd'T'HH:mm:ss.SSSZ", printFormate: String? = "MMM dd,yyyy HH:mm") -> String {
         let dateFormatterGet = DateFormatter()
         dateFormatterGet.dateFormat = getFormate
@@ -31,6 +32,5 @@ extension Date {
         } else {
             return Date()
         }
-        
     }
 }
