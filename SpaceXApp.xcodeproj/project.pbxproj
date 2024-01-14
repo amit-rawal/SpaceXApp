@@ -97,6 +97,7 @@
 		B789D86C2B52A7D000484D5C /* SpaceXApp */ = {
 			isa = PBXGroup;
 			children = (
+				B797FA922B53A464008CB065 /* Utility */,
 				B797CEB02B52BD0400099D4D /* Info.plist */,
 				B797CEA32B52B08400099D4D /* Modules */,
 				B789D86D2B52A7D000484D5C /* SpaceXAppApp.swift */,
@@ -202,6 +203,37 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		B797FA922B53A464008CB065 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B797FA932B53A472008CB065 /* Manager */,
+				B797FA952B53A492008CB065 /* Alert */,
+				B797FA942B53A484008CB065 /* Extentions */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		B797FA932B53A472008CB065 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		B797FA942B53A484008CB065 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		B797FA952B53A492008CB065 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
