@@ -7,7 +7,11 @@
 
 import UIKit
 
-final class NetworkManager {
+protocol NetworkingService {
+    func fetch<T: Codable>(from urlString: String) async throws -> T
+}
+
+final class NetworkManager : NetworkingService {
     
     static let shared = NetworkManager()
 

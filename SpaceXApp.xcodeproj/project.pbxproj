@@ -121,10 +121,10 @@
 		B77956192B541BB9006822CB /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				B797FABC2B53E872008CB065 /* MockManager.swift */,
 				B797FA962B53A5AC008CB065 /* NetworkManager.swift */,
 				B779561A2B541BF2006822CB /* Urls.swift */,
 				B797FA982B53A678008CB065 /* APIError.swift */,
-				B779561E2B543050006822CB /* NetworkMonitor.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -280,8 +280,8 @@
 		B797FA932B53A472008CB065 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				B779561E2B543050006822CB /* NetworkMonitor.swift */,
 				B797FABA2B53E529008CB065 /* RemoteImageManager.swift */,
-				B797FABC2B53E872008CB065 /* MockManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";

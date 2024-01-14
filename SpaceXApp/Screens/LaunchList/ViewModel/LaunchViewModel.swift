@@ -15,14 +15,22 @@ import SwiftUI
     @Published var isShowingDetail = false
     @Published var selectedLaunch: LaunchModel?
     
+    private let networkingService: NetworkingService
+
+    //dependency injection
+    init(networkingService: NetworkingService = NetworkManager.shared) {
+        self.networkingService = networkingService
+    }
     
-    func getLaunches() {
+
+    func getLaunches(completion: @escaping (Result<[LaunchModel], APIError>) -> Void) {
         isLoading = true
         Task {
             do {
-                let arr: [LaunchModel] = try await NetworkManager.shared.fetch(from: URLs.launchURL)
+                let arr: [LaunchModel] = try await networkingService.fetch(from: URLs.launchURL)
                 launches = arr.reversed()
                 isLoading = false
+                completion(.success(launches))
             } catch {
                 if let apError = error as? APIError {
                     switch apError {
@@ -39,6 +47,7 @@ import SwiftUI
                     alertItem = AlertContext.invalidResponse
                 }
                 isLoading = false
+                completion(.failure(error as? APIError ?? .invalidResponse))
             }
         }
     }

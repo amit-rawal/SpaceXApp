@@ -29,7 +29,7 @@ struct LaunchListView: View {
             }
             .navigationSplitViewStyle(.balanced)
             .task {
-                viewModel.getLaunches()
+                viewModel.getLaunches{_ in }
             }
             
             if viewModel.isLoading {
