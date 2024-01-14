@@ -9,15 +9,15 @@ import SwiftUI
 
 struct LaunchDetailView: View {
     
-    var mission: Mission
+   // var mission: Mission
     
     var body: some View {
-            Text(mission.name)
+            Text("Hello")
     }
 }
 
 struct LaunchDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        LaunchDetailView(mission: Mission(id: 111, name: "Test"))
+        LaunchDetailView()
     }
 }
