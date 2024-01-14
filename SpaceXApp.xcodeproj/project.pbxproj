@@ -121,6 +121,7 @@
 			children = (
 				B797FA962B53A5AC008CB065 /* NetworkManager.swift */,
 				B779561A2B541BF2006822CB /* Urls.swift */,
+				B797FA982B53A678008CB065 /* APIError.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -295,7 +296,6 @@
 		B797FA952B53A492008CB065 /* Alert */ = {
 			isa = PBXGroup;
 			children = (
-				B797FA982B53A678008CB065 /* APIError.swift */,
 				B797FA9A2B53A696008CB065 /* Alert.swift */,
 			);
 			path = Alert;

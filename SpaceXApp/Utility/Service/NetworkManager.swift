@@ -13,20 +13,26 @@ final class NetworkManager {
 
     private init() {}
     
-    //To get Launch data from internet
-    func getLaunches() async throws -> [LaunchModel] {
+    //generic Fetch request
+    func fetch<T: Codable>(from urlString: String) async throws -> T {
         
-        guard let url = URL(string: URLs.launchURL) else {
+        guard let url = URL(string: urlString) else {
             throw APIError.invalidURL
         }
         
-        let (data, _) = try await URLSession.shared.data(from: url)
+        let (data, response) = try await URLSession.shared.data(from: url)
+        
+        guard (response as? HTTPURLResponse)?.statusCode == 200 else {
+            throw APIError.invalidResponse
+        }
         
         do {
             let decoder = JSONDecoder()
-            return try decoder.decode([LaunchModel].self, from: data)
+            return try decoder.decode(T.self, from: data)
         } catch {
             throw APIError.invalidData
         }
     }
 }
+
+

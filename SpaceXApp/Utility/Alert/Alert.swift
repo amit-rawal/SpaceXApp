@@ -16,16 +16,17 @@ struct AlertItem: Identifiable {
 
 
 struct AlertContext {
+    
     //MARK: - Network Alerts
-    static let invalidData      = AlertItem(title: Text("Server Error"),
+    static let invalidData = AlertItem(title: Text("Server Error"),
                                             message: Text("The data received from the server was invalid. Please contact support."),
                                             dismissButton: .default(Text("OK")))
     
-    static let invalidResponse  = AlertItem(title: Text("Server Error"),
+    static let invalidResponse = AlertItem(title: Text("Server Error"),
                                             message: Text("Invalid response from the server. Please try again later or contact support."),
                                             dismissButton: .default(Text("OK")))
     
-    static let invalidURL       = AlertItem(title: Text("Sever Error"),
+    static let invalidURL = AlertItem(title: Text("Sever Error"),
                                             message: Text("There was an issue connecting to the server. If this persists, please contact support."),
                                             dismissButton: .default(Text("OK")))
     

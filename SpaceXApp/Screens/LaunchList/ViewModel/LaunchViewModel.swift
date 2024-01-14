@@ -18,10 +18,10 @@ import SwiftUI
     
     func getLaunches() {
         isLoading = true
-        
         Task {
             do {
-                launches = try await NetworkManager.shared.getLaunches().reversed()
+                let arr: [LaunchModel] = try await NetworkManager.shared.fetch(from: URLs.launchURL)
+                launches = arr.reversed()
                 isLoading = false
             } catch {
                 if let apError = error as? APIError {
