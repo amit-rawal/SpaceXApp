@@ -26,6 +26,7 @@
 		B797FAB02B53D7D2008CB065 /* LaunchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797FAAF2B53D7D2008CB065 /* LaunchCell.swift */; };
 		B797FAB92B53DDB8008CB065 /* MOCK_DATA.json in Resources */ = {isa = PBXBuildFile; fileRef = B797FAB72B53DDB8008CB065 /* MOCK_DATA.json */; };
 		B797FABB2B53E529008CB065 /* RemoteImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797FABA2B53E529008CB065 /* RemoteImageManager.swift */; };
+		B797FABD2B53E872008CB065 /* MockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797FABC2B53E872008CB065 /* MockManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		B797FAAF2B53D7D2008CB065 /* LaunchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCell.swift; sourceTree = "<group>"; };
 		B797FAB72B53DDB8008CB065 /* MOCK_DATA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MOCK_DATA.json; sourceTree = "<group>"; };
 		B797FABA2B53E529008CB065 /* RemoteImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageManager.swift; sourceTree = "<group>"; };
+		B797FABC2B53E872008CB065 /* MockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +249,7 @@
 			children = (
 				B797FABA2B53E529008CB065 /* RemoteImageManager.swift */,
 				B797FA962B53A5AC008CB065 /* NetworkManager.swift */,
+				B797FABC2B53E872008CB065 /* MockManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				B797FAAC2B53C963008CB065 /* Date+Ext.swift in Sources */,
 				B797CEAF2B52BA2F00099D4D /* LaunchDetailView.swift in Sources */,
 				B797FA9F2B53AB05008CB065 /* LaunchDataModel.swift in Sources */,
+				B797FABD2B53E872008CB065 /* MockManager.swift in Sources */,
 				B789D86E2B52A7D000484D5C /* SpaceXAppApp.swift in Sources */,
 				B797FAA32B53B8FE008CB065 /* LaunchViewModel.swift in Sources */,
 			);
