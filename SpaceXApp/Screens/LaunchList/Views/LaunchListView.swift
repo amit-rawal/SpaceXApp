@@ -16,14 +16,15 @@ struct LaunchListView: View {
     
     @StateObject var viewModel = LaunchListViewModel()
     
-    var body: some View {        
+    var body: some View {
         ZStack {
             NavigationSplitView(columnVisibility: .constant(.doubleColumn)) {
                 List(viewModel.launches, id: \.flightNumber) { launch in
                     NavigationLink {
+                        //launch.links.missionPatchSmall
                         //LaunchDetailView(mission: mission)
                     } label: {
-                        Text(launch.missionName)
+                        LaunchCell(launch: launch)
                     }
                 }
                 .navigationTitle("Launches")

@@ -1,9 +1,9 @@
 
 import Foundation
 
-var launchData: [LaunchDataModel] = load("MOCK_DATA.json")
+var launchData: [LaunchModel] = loadDataFromFile("MOCK_DATA.json")
 
-func load<T: Decodable>(_ filename: String) -> T {
+func loadDataFromFile<T: Decodable>(_ filename: String) -> T {
     let data: Data
 
     guard let file = Bundle.main.url(forResource: filename, withExtension: nil)

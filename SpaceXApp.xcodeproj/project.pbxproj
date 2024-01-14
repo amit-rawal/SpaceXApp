@@ -23,7 +23,9 @@
 		B797FAA32B53B8FE008CB065 /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797FAA22B53B8FE008CB065 /* LaunchViewModel.swift */; };
 		B797FAA72B53BBA7008CB065 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797FAA62B53BBA7008CB065 /* LoadingView.swift */; };
 		B797FAAC2B53C963008CB065 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797FAAB2B53C963008CB065 /* Date+Ext.swift */; };
-		B797FAAE2B53D474008CB065 /* LaunchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797FAAD2B53D474008CB065 /* LaunchCell.swift */; };
+		B797FAB02B53D7D2008CB065 /* LaunchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797FAAF2B53D7D2008CB065 /* LaunchCell.swift */; };
+		B797FAB92B53DDB8008CB065 /* MOCK_DATA.json in Resources */ = {isa = PBXBuildFile; fileRef = B797FAB72B53DDB8008CB065 /* MOCK_DATA.json */; };
+		B797FABB2B53E529008CB065 /* RemoteImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797FABA2B53E529008CB065 /* RemoteImageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +66,9 @@
 		B797FAA22B53B8FE008CB065 /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
 		B797FAA62B53BBA7008CB065 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		B797FAAB2B53C963008CB065 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
-		B797FAAD2B53D474008CB065 /* LaunchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCell.swift; sourceTree = "<group>"; };
+		B797FAAF2B53D7D2008CB065 /* LaunchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCell.swift; sourceTree = "<group>"; };
+		B797FAB72B53DDB8008CB065 /* MOCK_DATA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MOCK_DATA.json; sourceTree = "<group>"; };
+		B797FABA2B53E529008CB065 /* RemoteImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				B797CEB02B52BD0400099D4D /* Info.plist */,
+				B797FAB72B53DDB8008CB065 /* MOCK_DATA.json */,
 				B797FAA42B53BB67008CB065 /* Views */,
 				B797FA922B53A464008CB065 /* Utility */,
 				B797CEA32B52B08400099D4D /* Screens */,
@@ -240,6 +245,7 @@
 		B797FA932B53A472008CB065 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				B797FABA2B53E529008CB065 /* RemoteImageManager.swift */,
 				B797FA962B53A5AC008CB065 /* NetworkManager.swift */,
 			);
 			path = Manager;
@@ -282,7 +288,7 @@
 		B797FAAA2B53BC72008CB065 /* View Components */ = {
 			isa = PBXGroup;
 			children = (
-				B797FAAD2B53D474008CB065 /* LaunchCell.swift */,
+				B797FAAF2B53D7D2008CB065 /* LaunchCell.swift */,
 			);
 			path = "View Components";
 			sourceTree = "<group>";
@@ -391,6 +397,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B797FAB92B53DDB8008CB065 /* MOCK_DATA.json in Resources */,
 				B789D8752B52A7D400484D5C /* Preview Assets.xcassets in Resources */,
 				B789D8722B52A7D400484D5C /* Assets.xcassets in Resources */,
 			);
@@ -419,11 +426,12 @@
 			files = (
 				B797FA9B2B53A696008CB065 /* Alert.swift in Sources */,
 				B797FA9D2B53A719008CB065 /* Color+Ext.swift in Sources */,
-				B797FAAE2B53D474008CB065 /* LaunchCell.swift in Sources */,
+				B797FAB02B53D7D2008CB065 /* LaunchCell.swift in Sources */,
 				B797FA992B53A678008CB065 /* APIError.swift in Sources */,
 				B797FAA72B53BBA7008CB065 /* LoadingView.swift in Sources */,
 				B797FA972B53A5AC008CB065 /* NetworkManager.swift in Sources */,
 				B797CEAD2B52BA0E00099D4D /* LaunchListView.swift in Sources */,
+				B797FABB2B53E529008CB065 /* RemoteImageManager.swift in Sources */,
 				B797FAAC2B53C963008CB065 /* Date+Ext.swift in Sources */,
 				B797CEAF2B52BA2F00099D4D /* LaunchDetailView.swift in Sources */,
 				B797FA9F2B53AB05008CB065 /* LaunchDataModel.swift in Sources */,
