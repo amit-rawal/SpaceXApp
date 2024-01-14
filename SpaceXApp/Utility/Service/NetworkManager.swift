@@ -13,7 +13,7 @@ final class NetworkManager {
 
     private init() {}
     
-    //generic Fetch request
+    //MARK: generic Fetch request
     func fetch<T: Codable>(from urlString: String) async throws -> T {
         
         guard let url = URL(string: urlString) else {

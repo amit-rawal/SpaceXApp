@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B779561B2B541BF2006822CB /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779561A2B541BF2006822CB /* Urls.swift */; };
 		B779561D2B541FF9006822CB /* CellImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779561C2B541FF9006822CB /* CellImageView.swift */; };
+		B779561F2B543050006822CB /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779561E2B543050006822CB /* NetworkMonitor.swift */; };
 		B789D86E2B52A7D000484D5C /* SpaceXAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B789D86D2B52A7D000484D5C /* SpaceXAppApp.swift */; };
 		B789D8722B52A7D400484D5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B789D8712B52A7D400484D5C /* Assets.xcassets */; };
 		B789D8752B52A7D400484D5C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B789D8742B52A7D400484D5C /* Preview Assets.xcassets */; };
@@ -58,6 +59,7 @@
 /* Begin PBXFileReference section */
 		B779561A2B541BF2006822CB /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
 		B779561C2B541FF9006822CB /* CellImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellImageView.swift; sourceTree = "<group>"; };
+		B779561E2B543050006822CB /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		B789D86A2B52A7D000484D5C /* SpaceXApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B789D86D2B52A7D000484D5C /* SpaceXAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAppApp.swift; sourceTree = "<group>"; };
 		B789D8712B52A7D400484D5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				B797FA962B53A5AC008CB065 /* NetworkManager.swift */,
 				B779561A2B541BF2006822CB /* Urls.swift */,
 				B797FA982B53A678008CB065 /* APIError.swift */,
+				B779561E2B543050006822CB /* NetworkMonitor.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B797FAC22B53FB05008CB065 /* View+Ext.swift in Sources */,
+				B779561F2B543050006822CB /* NetworkMonitor.swift in Sources */,
 				B797FAC02B53F976008CB065 /* InformationView.swift in Sources */,
 				B797FA9B2B53A696008CB065 /* Alert.swift in Sources */,
 				B779561B2B541BF2006822CB /* Urls.swift in Sources */,
@@ -651,6 +655,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SpaceXApp/Preview Content\"";
+				DEVELOPMENT_TEAM = W4WRQSHA6S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SpaceXApp/Info.plist;
@@ -663,7 +668,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.app.SpaceXApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pramodtripathi.FreedomFromDiabetesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -679,6 +684,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SpaceXApp/Preview Content\"";
+				DEVELOPMENT_TEAM = W4WRQSHA6S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SpaceXApp/Info.plist;
@@ -691,7 +697,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.app.SpaceXApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pramodtripathi.FreedomFromDiabetesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

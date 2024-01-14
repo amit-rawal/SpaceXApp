@@ -7,6 +7,7 @@
 
 import Foundation
 
+//MARK: API errors
 enum APIError: Error {
     case invalidURL
     case invalidResponse
