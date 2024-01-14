@@ -14,15 +14,11 @@ struct LaunchDetailView: View {
     var body: some View {
 
         ZStack {
-
             ScrollView {
-                    
                 VStack(spacing: 20) {
                     
                     ImageViewDetail(launch: launch)
-       
                     InformationView(launch: launch)
-                    
                     LaunchDesc(launch: launch)
 //
 //                    if let rocket = contentVM.rocket {
@@ -35,7 +31,6 @@ struct LaunchDetailView: View {
  
                 }
                 .padding(.all, 15)
-                
                 Spacer()
             }
             .navigationBarTitle(launch.missionName)

@@ -14,27 +14,11 @@ struct LaunchCell: View {
     var body: some View {
         
        HStack {
-            VStack {
-                
-                if let imgUrl = launch.links.missionPatchSmall {
-                    RemoteImage(url: imgUrl)
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 40, height: 40, alignment: .center)
-                        .cornerRadius(8)
-                        .foregroundColor(.black)
-                    
-                } else {
-                    VStack {
-                        Image("default-icon")
-                            .resizable()
-                    }
-                    .frame(width: 40, height: 40, alignment: .center)
-                    .background(Color.lightGray)
-                    .cornerRadius(50)
-                }
-            }.padding(.trailing, 5)
+           
+            //To show Cell Image
+            CellImageView(launch: launch)
 
-
+            // To show Mission details
             VStack(alignment: .leading, spacing: 5) {
                 
                 Text("Mission Name: \(launch.missionName)")

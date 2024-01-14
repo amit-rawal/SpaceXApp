@@ -26,8 +26,6 @@ final class NetworkManager {
             let decoder = JSONDecoder()
             return try decoder.decode([LaunchModel].self, from: data)
         } catch {
-            print(error)
-            print(error.localizedDescription)
             throw APIError.invalidData
         }
     }

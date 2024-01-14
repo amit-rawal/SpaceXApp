@@ -16,8 +16,7 @@ struct LaunchDesc: View {
             HeaderLabel(title: "Information")
 
             VStack(alignment: .center, spacing: 10) {
-                
-                
+                                
                 if launch.launchSuccess != nil {
                     RowData(rowType: .bool, label: "Success", value: String(launch.launchSuccess ?? false))
                 } else {

@@ -48,7 +48,6 @@ struct RowData: View {
                 )
             }
             
-            
         case .link:
             return AnyView(
                 Link(destination: URL(string: value)!, label: {
@@ -65,8 +64,6 @@ struct RowData: View {
                     .font(.system(size: 14, weight: .medium, design: .rounded))
             )
         }
-        
-        
     }
     
     
@@ -87,12 +84,8 @@ struct RowData: View {
                     .font(.system(size: 14, weight: .semibold, design: .rounded))
                 
                 Spacer()
-                
-                
                 rowDataView()
             }
         }
-        
-        
     }
 }

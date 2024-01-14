@@ -19,7 +19,6 @@ struct InformationView: View {
                 HStack {
                     if let imgUrl = launch.links.missionPatchSmall {
                         RemoteImage(url: imgUrl)
-                            //.resizable()
                             .frame(width: frameSize, height: frameSize, alignment: .center)
                             .foregroundColor(.black)
                     } else {

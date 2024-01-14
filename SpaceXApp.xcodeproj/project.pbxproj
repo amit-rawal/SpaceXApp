@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B779561B2B541BF2006822CB /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779561A2B541BF2006822CB /* Urls.swift */; };
+		B779561D2B541FF9006822CB /* CellImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779561C2B541FF9006822CB /* CellImageView.swift */; };
 		B789D86E2B52A7D000484D5C /* SpaceXAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B789D86D2B52A7D000484D5C /* SpaceXAppApp.swift */; };
 		B789D8722B52A7D400484D5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B789D8712B52A7D400484D5C /* Assets.xcassets */; };
 		B789D8752B52A7D400484D5C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B789D8742B52A7D400484D5C /* Preview Assets.xcassets */; };
@@ -56,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		B779561A2B541BF2006822CB /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
+		B779561C2B541FF9006822CB /* CellImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellImageView.swift; sourceTree = "<group>"; };
 		B789D86A2B52A7D000484D5C /* SpaceXApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B789D86D2B52A7D000484D5C /* SpaceXAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAppApp.swift; sourceTree = "<group>"; };
 		B789D8712B52A7D400484D5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -319,6 +321,7 @@
 			isa = PBXGroup;
 			children = (
 				B797FAAF2B53D7D2008CB065 /* LaunchCell.swift */,
+				B779561C2B541FF9006822CB /* CellImageView.swift */,
 			);
 			path = "View Components";
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 				B797FA9B2B53A696008CB065 /* Alert.swift in Sources */,
 				B779561B2B541BF2006822CB /* Urls.swift in Sources */,
 				B797FA9D2B53A719008CB065 /* Color+Ext.swift in Sources */,
+				B779561D2B541FF9006822CB /* CellImageView.swift in Sources */,
 				B797FAB02B53D7D2008CB065 /* LaunchCell.swift in Sources */,
 				B797FA992B53A678008CB065 /* APIError.swift in Sources */,
 				B797FAA72B53BBA7008CB065 /* LoadingView.swift in Sources */,

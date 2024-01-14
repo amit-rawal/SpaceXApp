@@ -9,10 +9,6 @@ import Foundation
 import SwiftUI
 
 
-struct LaunchResponse: Codable {
-    let request: [LaunchModel]
-}
-
 // MARK: - LaunchModel
 struct LaunchModel: Codable {
    

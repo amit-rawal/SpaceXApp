@@ -18,12 +18,10 @@ struct ImageViewDetail: View {
                 RemoteImage(url: imgUrl)
                     .aspectRatio(contentMode: .fit)
                     .scaledToFit()
-                    
             } else {
                 Image(systemName: "photo")
                     .resizable()
                     .scaledToFit()
-                
             }
         }
         .frame(height: 260)

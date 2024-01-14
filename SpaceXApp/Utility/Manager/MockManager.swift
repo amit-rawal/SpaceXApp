@@ -7,6 +7,8 @@
 
 import Foundation
 
+//To Use Mock Data for Testing
+
 final class MockManager {
     
     static let shared = MockManager()

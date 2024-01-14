@@ -29,7 +29,6 @@ struct LaunchListView: View {
             }
             .navigationSplitViewStyle(.balanced)
             .task {
-                print("API called")
                 viewModel.getLaunches()
             }
             
