@@ -19,16 +19,7 @@ struct LaunchDetailView: View {
                     
                     ImageViewDetail(launch: launch)
                     InformationView(launch: launch)
-                    LaunchDesc(launch: launch)
-//
-//                    if let rocket = contentVM.rocket {
-//                        RocketInfo(rocket: rocket)
-//                    }
-//
-//                    if let launchpad = contentVM.launchpad {
-//                        Launchpad(launchpad: launchpad)
-//                    }
- 
+                    LaunchDesc(launch: launch) 
                 }
                 .padding(.all, 15)
                 Spacer()
