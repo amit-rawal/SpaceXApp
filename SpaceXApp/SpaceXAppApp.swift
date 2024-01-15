@@ -27,16 +27,13 @@ struct ContentView: View {
 
     var body: some View {
         
-        NavigationView {
-            LaunchListView()
-        }
-        .onChange(of: networkMonitor.connected) { connection in
-            showNetworkAlert = connection == false
-        }
-        .popover(isPresented: $showNetworkAlert) {
-            Text("Network connection seems to be offline.")
-        }
+        LaunchListView()
+            .onChange(of: networkMonitor.connected) { connection in
+                showNetworkAlert = connection == false
+            }
+            .popover(isPresented: $showNetworkAlert) {
+                Text("Network connection seems to be offline.")
+            }
     }
 }
-
 

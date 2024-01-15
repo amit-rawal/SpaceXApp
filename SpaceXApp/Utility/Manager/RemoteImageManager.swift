@@ -78,8 +78,7 @@ class ImageLoader: ObservableObject {
                 self.image = image
                 ImageCache.shared.set(image!, forKey: self.url)
             }
-        }
-    
+        }    
         task?.resume()
     }
 }
